@@ -14,7 +14,7 @@ body {
 }
 
 .ryu {
-	float: left; 
+	float: left; /*told to add here, as well as .hadouken*/
 	width: 659px;
 	height: 494px;
 }
@@ -44,15 +44,25 @@ body {
 	background-image: url('../images/ryu-cool.gif');
 }
 
-.hadouken {
-  background-image: url('../images/hadouken.gif');
-  width: 156px; 
-  height: 90px;
-  display: none;
-  position: absolute;
-  z-index: 10;
-  top: 167px;
-  left: 520px;
-  float: left;
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+	background-repeat: no-repeat;
 }
 
+.hadouken {
+	background-image: url('../images/hadouken.gif');
+	width: 156px;
+	height: 90px;
+	display: none;
+	top: 167px;
+	left: 520px;
+	float: left;
+	position: absolute;
+	z-index: 10;
+}
+
+.instruction {
+	float: right;
+	margin-right: 30%;
+	position: relative;
+	top: 14em;		
+}
